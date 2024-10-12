@@ -4,6 +4,7 @@ import { Offcanvas } from 'react-bootstrap'
 import Currencies from '../components/Currencies'
 import MonthlyCourse  from '../components/MonthlyCourse'
 import { useSelector, useDispatch } from 'react-redux'
+import { urlServer } from '../variables/variables'
 import axios from 'axios'
 
 const Home: FC = () => {
@@ -48,7 +49,7 @@ const Home: FC = () => {
         console.log(numbersOfDays)
         for (let i = 1; i <= numbersOfDays; i++) {
             console.log(i)
-            const data = await axios.post('http://localhost:5000/days', { i })   // <-- получение данных
+            const data = await axios.post(urlServer + '/days', { i })   // <-- получение данных
             console.log(data)  // <-- получение данных
             await dispatch({type: "ADD_CURRENCIES_WITH_DATE", currencies: data.data.ValCurs.Valute})
         }

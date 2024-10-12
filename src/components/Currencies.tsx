@@ -2,6 +2,8 @@ import React, { FC, useEffect } from 'react'
 import { Offcanvas } from 'react-bootstrap'
 import axios from 'axios'
 import { useSelector, useDispatch } from 'react-redux'
+import { urlServer } from '../variables/variables'
+
 interface Props {
 	Close: any,
 	show: boolean,
@@ -12,7 +14,7 @@ const Currencies: FC<Props> = ({ Close, show, AddChoice }) => {
 	const dispatch = useDispatch()
 	const currencies = useSelector((state: any) => state.currencies.currencies)
 	const getData = async () => {
-		const data = await axios('http://localhost:5000')
+		const data = await axios(urlServer)
 		console.log(data.data.ValCurs.Valute)
 		dispatch({type: "ADD_CURRENCIES",currencies: data.data.ValCurs.Valute})
 	}

@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Exchange-Rate-app/static/css/main.0f465a9e.css",
+    "main.js": "/Exchange-Rate-app/static/js/main.e60ceadc.js",
+    "index.html": "/Exchange-Rate-app/index.html",
+    "main.0f465a9e.css.map": "/Exchange-Rate-app/static/css/main.0f465a9e.css.map",
+    "main.e60ceadc.js.map": "/Exchange-Rate-app/static/js/main.e60ceadc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0f465a9e.css",
+    "static/js/main.e60ceadc.js"
+  ]
+}

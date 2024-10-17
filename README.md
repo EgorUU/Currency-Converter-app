@@ -1,1 +1,1 @@
-Ссылка на Сайт : https://egoruu.github.io/Exchange-Rate-app/
+Ссылка на Сайт : https://egoruu.github.io/Currency-Converter-app/

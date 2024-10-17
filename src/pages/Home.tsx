@@ -74,6 +74,10 @@ const Home: FC = () => {
     const [firstChoice, setFirst] = useState<string>('RUB')
     const [secondChoice, setSecond] = useState<string>('USD')
     const [loading, setLoading] = useState<boolean>(false)
+    const [connect, setConnect] = useState<boolean>(false)
+    const isConnect = () => {
+        setConnect(true)
+    }
     return (
         <section className="home">
         	<div className="home-container">
@@ -106,12 +110,12 @@ const Home: FC = () => {
                             setResult(currencyCalculation(currentCurrency))
                             setLoading(true)
                             Chart()
-                        }}>Конвертировать</button>
+                        }} disabled={!connect}>{!connect ? "Подключение..." : "Конвертировать"}</button>
         			</div>
         		</div>
                 <MonthlyCourse ComplitingDownload={ComplitingDownload} currencyCalculation={currencyCalculation} loading={loading} chart={Chart} days={valuess} currentValue={[{value: input.current?.value, course: firstChoice, course2: secondChoice}]}/>
         	</div>
-            <Currencies show={show} Close={Close} AddChoice={AddChoice} />
+            <Currencies show={show} Close={Close} AddChoice={AddChoice} isConnect={isConnect} />
         </section>
     )
 }

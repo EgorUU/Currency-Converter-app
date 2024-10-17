@@ -7,16 +7,18 @@ import { urlServer } from '../variables/variables'
 interface Props {
 	Close: any,
 	show: boolean,
-	AddChoice: any
+	AddChoice: any,
+	isConnect: any,
 }
 
-const Currencies: FC<Props> = ({ Close, show, AddChoice }) => {
+const Currencies: FC<Props> = ({ Close, show, AddChoice, isConnect }) => {
 	const dispatch = useDispatch()
 	const currencies = useSelector((state: any) => state.currencies.currencies)
 	const getData = async () => {
 		const data = await axios(urlServer)
 		console.log(data.data.ValCurs.Valute)
 		dispatch({type: "ADD_CURRENCIES",currencies: data.data.ValCurs.Valute})
+		isConnect()
 	}
 	useEffect(() => {
 		console.log('fe')

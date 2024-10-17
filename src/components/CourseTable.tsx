@@ -6,6 +6,9 @@ const CourseTable: FC<any> = ({ el, date, currentValue, i }) => {
 	console.log(currentMonth)
     return (
         <div className="day-column" style={{width: `${693 / date}px`}} onMouseEnter={() => setShow(true)} onMouseLeave={() => setShow(false)}>
+			{
+				show && <div className="day-column-line"></div>
+			}
 			<div className={!show ? "course-table" : "course-table table-active"}>
 				<div className="course-table-current">
 					<h1>{currentValue[0].value}</h1>

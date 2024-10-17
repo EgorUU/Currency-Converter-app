@@ -1,1 +1,1 @@
-Ссылка на Сайт : https://egoruu.github.io/Currency-Converter-app/
+Ссылка на Сайт : https://EgorUU.github.io/Currency-Converter-app

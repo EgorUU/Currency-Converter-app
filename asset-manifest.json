@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Exchange-Rate-app/static/css/main.0f465a9e.css",
-    "main.js": "/Exchange-Rate-app/static/js/main.e60ceadc.js",
-    "index.html": "/Exchange-Rate-app/index.html",
-    "main.0f465a9e.css.map": "/Exchange-Rate-app/static/css/main.0f465a9e.css.map",
-    "main.e60ceadc.js.map": "/Exchange-Rate-app/static/js/main.e60ceadc.js.map"
+    "main.css": "/EgorUU/Currency-Converter-app/static/css/main.9bc978d8.css",
+    "main.js": "/EgorUU/Currency-Converter-app/static/js/main.d0036adc.js",
+    "index.html": "/EgorUU/Currency-Converter-app/index.html",
+    "main.9bc978d8.css.map": "/EgorUU/Currency-Converter-app/static/css/main.9bc978d8.css.map",
+    "main.d0036adc.js.map": "/EgorUU/Currency-Converter-app/static/js/main.d0036adc.js.map"
   },
   "entrypoints": [
-    "static/css/main.0f465a9e.css",
-    "static/js/main.e60ceadc.js"
+    "static/css/main.9bc978d8.css",
+    "static/js/main.d0036adc.js"
   ]
 }
